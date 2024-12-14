@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Режим дня на неделю</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Бирюзовый цвет фона */
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #00796b; /* Темно-бирюзовый цвет заголовка */
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #00796b; /* Темно-бирюзовая рамка */
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #00796b; /* Темно-бирюзовый цвет заголовков */
+            color: white;
+        }
+        textarea {
+            width: 90%;
+            height: 200px; /* Высота текстовой области для 10 абзацев */
+            padding: 5px;
+            margin-top: 5px;
+            resize: none; /* Отключение изменения размера */
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #00796b; /* Темно-бирюзовый цвет кнопки */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #004d40; /* Темнее при наведении */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Күнүм режима</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Нэдиэлэ күннэрэ</th>
+            <th>Бириэмэтэ уонно кун режима</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Бэнидиэнньик</td>
+            <td><textarea placeholder="Бириэмэ5ин уонна күнүн режимын суруй..."></textarea></td>
+        </tr>
+        <tr>
+            <td>Оптуорунньук</td>
+            <td><textarea placeholder="Бириэмэ5ин уонна күнүн режимын суруй..."></textarea></td>
+        </tr>
+        <tr>
+            <td>Сэрэдэ</td>
+            <td><textarea placeholder="Бириэмэ5ин уонна күнүн режимын суруй..."></textarea></td>
+        </tr>
+        <tr>
+            <td>Чэппиэр</td>
+            <td><textarea placeholder="Бириэмэ5ин уонна күнүн режимын суруй..."></textarea></td>
+        </tr>
+        <tr>
+            <td>Бээтинсэ</td>
+            <td><textarea placeholder="Бириэмэ5ин уонна күнүн режимын суруй..."></textarea></td>
+        </tr>
+        <tr>
+            <td>Субуота</td>
+            <td><textarea placeholder="Бириэмэ5ин уонна күнүн режимын суруй..."></textarea></td>
+        </tr>
+        <tr>
+            <td>Баскыhыанньа</td>
+            <td><textarea placeholder="Бириэмэ5ин уонна күнүн режимын суруй..."></textarea></td>
+        </tr>
+    </tbody>
+</table>
+
+<button onclick="saveSchedule()">Сохранить</button>
+
+<script>
+    function saveSchedule() {
+        alert("Ваш режим дня сохранён!"); // Здесь можно добавить логику для сохранения данных
+    }
+</script>
+
+</body>
+</html>

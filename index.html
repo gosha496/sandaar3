@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <style>
+      body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa; /* Бирюзовый цвет фона */
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #00796b; /* Темно-бирюзовый цвет заголовка */
+        }
+        .week {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            border: 1px solid #00796b; /* Темно-бирюзовая рамка */
+            border-radius: 5px;
+            background: #ffffff; /* Белый фон для недели */
+            padding: 10px;
+        }
+        .day {
+            flex: 1;
+            padding: 10px;
+            border-right: 1px solid #ccc;
+        }
+        .day:last-child {
+            border-right: none;
+        }
+        .day h2 {
+            text-align: center;
+            color: #00796b; /* Темно-бирюзовый цвет заголовка дня */
+        }
+        .plan {
+            margin: 10px 0;
+        }
+        .plan input {
+            width: calc(100% - 60px);
+            padding: 5px;
+        }
+        .plan button {
+            padding: 5px;
+        }
+        .reminder {
+            margin-top: 5px;
+        }
+        .time-icon {
+            margin-right: 5px;
+            color: #00796b; /* Темно-бирюзовый цвет иконки часов */
+        }
+        .check-icon {
+            color: #4caf50; /* Зеленый цвет иконки галочки */
+            margin-right: 5px;
+        }
+  <title>Сандаар</title>
+  <style>
+    .scale {
+    display: inline-block; /* Строчно-блочный элемент */
+    overflow: hidden; /* Скрываем всё за контуром */
+   }
+   .scale img {
+    transition: 1s; /* Время эффекта */
+    display: block; /* Убираем небольшой отступ снизу */
+   }
+   .scale img:hover {
+    transform: scale(1.3); /* Увеличиваем масштаб */
+   }
+</style>
+</head><p>
+  <div>
+    <a href="file:///C:/Users/УКСОШ/Desktop/Оздоровление%20детей/onas.html"><img src="img/4.jpg" width="150px" height="45" class="scale"></a>
+    <a href="file:///C:/Users/УКСОШ/Desktop/Оздоровление%20детей/registration.html"><img src="img/16.png" width="150" height="45" class="scale"></a>
+    <a href="file:///C:/Users/УКСОШ/Desktop/Оздоровление%20детей/Режимдня.html"><img src="img/36.png" width="150" height="60" class="scale"></a>
+   </div>
+   <img src="img/03.jpg">
+ </p>
+<body style="background-color: #FFFFFF">
+  
+
+<div>
+
+</div>
+
+<h1> Күннүк ахсынньы 9-15 куннэрэ 2024 сыл</h1>
+
+<div class="week">
+    <div class="day">
+        <h2>9 Ахсынньы</h2>
+        <div id="plans-9"></div>
+        <div class="plan">
+            <input type="text" placeholder="Добавить план..." id="input-9">
+            <i class="fas fa-clock time-icon"></i>
+            <input type="time" class="reminder" id="reminder-9">
+            <button onclick="addPlan(9)">Добавить</button>
+        </div>
+    </div>
+    <div class="day">
+        <h2>10 Ахсынньы</h2>
+        <div id="plans-10"></div>
+        <div class="plan">
+            <input type="text" placeholder="Добавить план..." id="input-10">
+            <i class="fas fa-clock time-icon"></i>
+            <input type="time" class="reminder" id="reminder-10">
+            <button onclick="addPlan(10)">Добавить</button>
+        </div>
+    </div>
+    <div class="day">
+        <h2>11 Ахсынньы</h2>
+        <div id="plans-11"></div>
+        <div class="plan">
+            <input type="text" placeholder="Добавить план..." id="input-11">
+            <i class="fas fa-clock time-icon"></i>
+            <input type="time" class="reminder" id="reminder-11">
+            <button onclick="addPlan(11)">Добавить</button>
+        </div>
+    </div>
+    <div class="day">
+        <h2>12 Ахсынньы</h2>
+        <div id="plans-12"></div>
+        <div class="plan">
+            <input type="text" placeholder="Добавить план..." id="input-12">
+            <i class="fas fa-clock time-icon"></i>
+            <input type="time" class="reminder" id="reminder-12">
+            <button onclick="addPlan(12)">Добавить</button>
+        </div>
+    </div>
+    <div class="day">
+        <h2>13 Ахсынньы</h2>
+        <div id="plans-13"></div>
+        <div class="plan">
+            <input type="text" placeholder="Добавить план..." id="input-13">
+            <i class="fas fa-clock time-icon"></i>
+            <input type="time" class="reminder" id="reminder-13">
+            <button onclick="addPlan(13)">Добавить</button>
+        </div>
+    </div>
+    <div class="day">
+        <h2>14 Ахсынньы</h2>
+        <div id="plans-14"></div>
+        <div class="plan">
+            <input type="text" placeholder="Добавить план..." id="input-14">
+            <i class="fas fa-clock time-icon"></i>
+            <input type="time" class="reminder" id="reminder-14">
+            <button onclick="addPlan(14)">Добавить</button>
+        </div>
+    </div>
+    <div class="day">
+        <h2>15 Ахсынньы</h2>
+        <div id="plans-15"></div>
+        <div class="plan">
+            <input type="text" placeholder="Добавить план..." id="input-15">
+            <i class="fas fa-clock time-icon"></i>
+            <input type="time" class="reminder" id="reminder-15">
+            <button onclick="addPlan(15)">Добавить</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function addPlan(day) {
+        const input = document.getElementById(`input-${day}`);
+        const reminder = document.getElementById(`reminder-${day}`);
+        const plansContainer = document.getElementById(`plans-${day}`);
+
+        if (input.value.trim() === '') {
+            alert('Введите план!');
+            return;
+        }
+
+        const planItem = document.createElement('div');
+        planItem.innerHTML = `<i class="fas fa-check check-icon"></i>${input.value} (Напоминание: ${reminder.value})`;
+        plansContainer.appendChild(planItem);
+
+        input.value = '';
+        reminder.value = '';
+        
+        // Установка напоминания (простой вариант, без реальной реализации)
+        // В реальном приложении нужно будет реализовать логику напоминаний
+        setTimeout(() => {
+            alert(`Напоминание: ${input.value}`);
+        }, 5000); // Замените на реальное время
+    }
+</script>
+
+</body>
+</html>
